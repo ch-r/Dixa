@@ -1,7 +1,7 @@
 PImage img;
 
 void setup() {
-  img = loadImage("test.jpg");
+  img = loadImage("image1.png", "png");
 }
 
 void draw() {
