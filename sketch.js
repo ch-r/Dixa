@@ -1,4 +1,4 @@
-ar img;  // Declare variable 'img'.
+var img;  // Declare variable 'img'.
 
 function setup() {
   createCanvas(720, 400);
