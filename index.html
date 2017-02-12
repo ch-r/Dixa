@@ -3,7 +3,7 @@
   <style> 
   body {padding: 0; margin: 0;} 
   .overlap { top:auto; left:auto; position: absolute;  pointer-events:none; }
-  .svgoverlap {     pointer-events:all;  fill:limegreen; fill-opacity:0.1; } 
+  .svgoverlap {     pointer-events:all;  fill:limegreen; fill-opacity:0; } 
   img.hidden {display: none;}
   
   </style>
@@ -54,19 +54,19 @@
 
 function showImage(imageId) {
   var x = document.getElementById(imageId);
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display= 'none';
-  }
-}
-
-function hideImage(imageId) {
-  var x = document.getElementById(imageId);
   if (x.style.display === 'block') {
     x.style.display = 'none';
   } else {
     x.style.display= 'block';
+  }
+}
+
+function hideImage(imageId) {
+    var x = document.getElementById(imageId);
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display= 'none';
   }
 }
 
@@ -93,7 +93,7 @@ function showE(){
 }
 function showF(){
   showImage('rug_active');
-  hideImage('rug');
+  hideImage('rug')
 }
 
 
